@@ -35,7 +35,7 @@ export default function LoginValidation() {
                 <label htmlFor="exampleInputName" className="form-label">
                 Complete Name {name === '' ? ( 
                 <span className='ms-2 mt-2' style={{color: 'red'}}> ( Name Input Field is Empty ) 👇🏻</span>
-                ): null}
+                ): <span className='ms-2 mt-2' style={{color: 'darkGreen'}}> ( Name Input Field is Updated ) ✅ </span> }
                 </label>
                 <input
                 type="text"
@@ -43,7 +43,7 @@ export default function LoginValidation() {
                 id="exampleInputName"
                 value={name}
                 onChange={(event)=>{setName(event.target.value)}}
-                style={{border: name === '' ? '2px solid red':'2px solid grey' }}
+                style={{border: name === '' ? '2px solid red':'2px solid green' }}
                 placeholder='username'
                 />
             </div>
@@ -53,7 +53,7 @@ export default function LoginValidation() {
                 <label htmlFor="exampleInputEmail1 d-flex" className="form-label">
                     Email address {email === '' ? ( 
                 <span className='ms-2 mt-2' style={{color: 'red'}}> ( Email Input Field is Empty ) 👇🏻</span>
-                ): null}
+                ): <span className='ms-2 mt-2' style={{color: 'darkGreen'}}> ( Email Input Field is Updated ) ✅ </span>}
                 </label> 
 
                 <input
@@ -63,7 +63,7 @@ export default function LoginValidation() {
                 aria-describedby="emailHelp"
                 value={email}
                 onChange={(event)=>{setEmail(event.target.value)}}
-                style={{border: email === '' ? '2px solid red':'2px solid grey' }}
+                style={{border: email === '' ? '2px solid red':'2px solid green' }}
                 placeholder='email@gamil.com'
                 />
  
@@ -73,7 +73,7 @@ export default function LoginValidation() {
                 <label htmlFor="exampleInputPassword1" className="form-label">
                 Password {password === '' ? ( 
                 <span className='ms-2 mt-2' style={{color: 'red'}}> ( Password Input Field is Empty ) 👇🏻</span>
-                ): null}
+                ): <span className='ms-2 mt-2' style={{color: 'darkGreen'}}> ( Password Input Field is Updated ) ✅ </span>}
                 </label>
                 <input
                 type="password"
@@ -81,7 +81,7 @@ export default function LoginValidation() {
                 id="exampleInputPassword1"
                 value={password}
                 onChange={(event)=>{setPassword(event.target.value)}}
-                style={{border: password === '' ? '2px solid red':'2px solid grey' }}
+                style={{border: password === '' ? '2px solid red':'2px solid green' }}
                 placeholder='password'
                 />
             </div>
