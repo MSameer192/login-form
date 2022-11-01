@@ -26,7 +26,7 @@ export default function LoginValidation() {
             <div className="mb-3 mt-5">
                 <label htmlFor="exampleInputName" className="form-label">
                 Complete Name {name === '' ? ( 
-                <span className='ms-2 mt-2' style={{color: 'red'}}> 👇🏻 ( Name Input Field is Empty )</span>
+                <span className='ms-2 mt-2' style={{color: 'red'}}> ( Name Input Field is Empty ) 👇🏻</span>
                 ): null}
                 </label>
                 <input
@@ -35,6 +35,8 @@ export default function LoginValidation() {
                 id="exampleInputName"
                 value={name}
                 onChange={(event)=>{setName(event.target.value)}}
+                style={{border: name === '' ? '2px solid red':'2px solid grey' }}
+                placeholder='username'
                 />
             </div>
 
@@ -42,7 +44,7 @@ export default function LoginValidation() {
             <div className="mb-3">
                 <label htmlFor="exampleInputEmail1 d-flex" className="form-label">
                     Email address {email === '' ? ( 
-                <span className='ms-2 mt-2' style={{color: 'red'}}> 👇🏻 ( Email Input Field is Empty )</span>
+                <span className='ms-2 mt-2' style={{color: 'red'}}> ( Email Input Field is Empty ) 👇🏻</span>
                 ): null}
                 </label> 
 
@@ -53,6 +55,8 @@ export default function LoginValidation() {
                 aria-describedby="emailHelp"
                 value={email}
                 onChange={(event)=>{setEmail(event.target.value)}}
+                style={{border: email === '' ? '2px solid red':'2px solid grey' }}
+                placeholder='email@gamil.com'
                 />
  
 
@@ -60,7 +64,7 @@ export default function LoginValidation() {
             <div className="mb-3">
                 <label htmlFor="exampleInputPassword1" className="form-label">
                 Password {password === '' ? ( 
-                <span className='ms-2 mt-2' style={{color: 'red'}}> 👇🏻 ( Password Input Field is Empty )</span>
+                <span className='ms-2 mt-2' style={{color: 'red'}}> ( Password Input Field is Empty ) 👇🏻</span>
                 ): null}
                 </label>
                 <input
@@ -69,6 +73,8 @@ export default function LoginValidation() {
                 id="exampleInputPassword1"
                 value={password}
                 onChange={(event)=>{setPassword(event.target.value)}}
+                style={{border: password === '' ? '2px solid red':'2px solid grey' }}
+                placeholder='password'
                 />
             </div>
 
