@@ -8,7 +8,15 @@ export default function LoginValidation() {
   const [password, setPassword] = useState('');  
 
 
-
+//   function alert() {
+//     if(name === ''){
+//         alert("your  input is Empty")
+//       }else if(email === ''){
+//         alert("Your  input is Empty")
+//        }else if(password === ""){
+//         alert("your  input is Empty")
+//        }
+//   }  
 
 
 
