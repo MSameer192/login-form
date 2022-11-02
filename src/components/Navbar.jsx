@@ -24,15 +24,21 @@ export default function Navbar() {
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
 
-                    <li className="nav-item me-5">
+                    <li className="nav-item me-2">
                     <Link className="nav-link active color" aria-current="page" to="/">
                         Validation Login Form 
                     </Link>
                     </li>
 
-                    <li className="nav-item">
+                    <li className="nav-item me-2">
                     <Link className="nav-link active color" to="/about">
                         Alert Login Form
+                    </Link>
+                    </li>
+
+                    <li className="nav-item">
+                    <Link className="nav-link active color" to="/filterArray">
+                        Filter Arrays into Number
                     </Link>
                     </li>
                 </ul>
