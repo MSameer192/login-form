@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 export default function FilterForm() {
+
   const [number, setNumber] = useState();
   const [list, setList] = useState([]);
 
@@ -37,36 +38,39 @@ export default function FilterForm() {
 
       <div className="container text-center mt-5">
 
-        Input all numbers of data mentioned below:
+          Input all numbers of data mentioned below:
 
-        {
-            list.map(mainArray =>(
-                <li> {mainArray} </li>
-            ))
+          {
+              list.map(mainArray =>(
+                  <li> {mainArray} </li>
+              ))
 
-        }  
+          }  
 
-        <br /> <br /> <br />
-
-        Negative Numbers mentioned below:
-        {
-            list.filter(pNum => pNum < 0).map(positiveNum => (
-                <li>
-                    {positiveNum}
-                </li>
-            ))                          
-        }
-        <br /> <br /> <br />
+          <br /> <br /> <br />
 
 
-        Positive Numbers mentioned below:
-        {
-            list.filter(nNum => nNum > 0).map(negativeNum => (
-                <li>
-                    {negativeNum}
-                </li>
-            ))
-        }
+          Negative Numbers mentioned below:
+
+          {
+              list.filter(pNum => pNum < 0).map(positiveNum => (
+                  <li>
+                      {positiveNum}
+                  </li>
+              ))                          
+          }
+
+          <br /> <br /> <br />
+
+
+          Positive Numbers mentioned below:
+          {
+              list.filter(nNum => nNum > 0).map(negativeNum => (
+                  <li>
+                      {negativeNum}
+                  </li>
+              ))
+          }
 
       </div>
 
